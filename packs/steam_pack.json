@@ -1,0 +1,106 @@
+{
+  "Id": "pack_steam",
+  "Name": "Steam Master Pack",
+  "Author": "MrLofrik",
+  "Version": "1.0",
+  "Description": "Библиотека игр, магазин, друзья, оверлей, инвентарь и управление клиентом Steam",
+  "Commands": [
+    {
+      "Name": "Запустить Steam",
+      "TriggersRaw": "открой стим, запусти стим, включи стим, стим",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Запускаю Steam" },
+        { "Type": 1, "Target": "steam://open/main", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Библиотека игр",
+      "TriggersRaw": "библиотека стим, открой игры, мои игры в стиме, библиотека игр",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Открываю библиотеку" },
+        { "Type": 1, "Target": "steam://nav/games/details", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Магазин Steam",
+      "TriggersRaw": "магазин стим, скидки в стиме, открой магазин стим, магазин игр",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Открываю магазин Steam" },
+        { "Type": 1, "Target": "steam://store", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Друзья Steam",
+      "TriggersRaw": "друзья в стиме, список друзей, открой друзей стим",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Список друзей" },
+        { "Type": 1, "Target": "steam://open/friends", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Загрузки Steam",
+      "TriggersRaw": "загрузки в стиме, скачивание стим, покажи загрузки",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 1, "Target": "steam://open/downloads", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Инвентарь Steam",
+      "TriggersRaw": "инвентарь стим, покажи инвентарь, скины в стиме",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Открываю инвентарь" },
+        { "Type": 1, "Target": "steam://url/CommunityInventory", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Режим Big Picture",
+      "TriggersRaw": "биг пикчер, режим геймпада, биг пикчур",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Включаю Big Picture" },
+        { "Type": 1, "Target": "steam://open/bigpicture", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Игровой скриншот",
+      "TriggersRaw": "скриншот в стиме, заскринь игру, снимок стим",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "f12", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Оверлей Steam",
+      "TriggersRaw": "оверлей стим, открой оверлей, закрой оверлей",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "shift+tab", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Выключить Steam",
+      "TriggersRaw": "закрой стим, выгрузи стим, заверши стим",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Закрываю Steam" },
+        { "Type": 0, "Target": "taskkill.exe", "Arguments": "/F /IM steam.exe", "ValueInt": 0 }
+      ]
+    }
+  ]
+}
