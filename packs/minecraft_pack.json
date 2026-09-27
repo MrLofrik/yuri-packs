@@ -1,0 +1,100 @@
+{
+  "Id": "pack_minecraft",
+  "Name": "Minecraft Gamer Pack",
+  "Author": "MrLofrik",
+  "Version": "1.0",
+  "Description": "Координаты F3, границы чанков F3+G, хитбоксы F3+B, перезагрузка текстур F3+T и игровые скриншоты",
+  "Commands": [
+    {
+      "Name": "Координаты / Экран отладки",
+      "TriggersRaw": "координаты в майнкрафте, покажи координаты, отладка майн, нажми ф3, координаты",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "f3" }
+      ]
+    },
+    {
+      "Name": "Скриншот Minecraft",
+      "TriggersRaw": "скриншот в майнкрафте, заскринь майнкрафт, снимок экрана в майне, заскринь майн",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "f2" }
+      ]
+    },
+    {
+      "Name": "Перезагрузка текстур (F3+T)",
+      "TriggersRaw": "перезагрузи текстуры, перезагрузка ресурсов, обнови текстуры, ф3 т",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Перезагружаю текстуры" },
+        { "Type": 3, "Target": "f3+t" }
+      ]
+    },
+    {
+      "Name": "Границы чанков (F3+G)",
+      "TriggersRaw": "границы чанков, покажи чанки, сетка чанков, ф3 г",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "f3+g" }
+      ]
+    },
+    {
+      "Name": "Хитбоксы мобов (F3+B)",
+      "TriggersRaw": "хитбоксы мобов, покажи хитбоксы, включи хитбоксы, ф3 б",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "f3+b" }
+      ]
+    },
+    {
+      "Name": "Скрыть интерфейс (F1)",
+      "TriggersRaw": "скрой интерфейс, покажи интерфейс, кинематографичный режим, нажми ф1",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "f1" }
+      ]
+    },
+    {
+      "Name": "Очистить чат игры",
+      "TriggersRaw": "очисти чат в майне, сбрось чат майнкрафта, ф3 д",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "f3+d" }
+      ]
+    },
+    {
+      "Name": "Открыть чат",
+      "TriggersRaw": "чат в майнкрафте, открой игровой чат, напиши в майн",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "t" }
+      ]
+    },
+    {
+      "Name": "Ввод команды",
+      "TriggersRaw": "команда в майнкрафте, консоль майнкрафта, введи команду",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "/" }
+      ]
+    },
+    {
+      "Name": "Полный экран игры",
+      "TriggersRaw": "полный экран майнкрафт, игра на весь экран, майн во весь экран",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "f11" }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,121 @@
+{
+  "Id": "pack_telegram",
+  "Name": "Telegram Desktop Pack",
+  "Author": "MrLofrik",
+  "Version": "1.1",
+  "Description": "Переход в Избранное, быстрые шаблоны ответов, поиск, блокировка и управление клиентом Telegram",
+  "Commands": [
+    {
+      "Name": "Открыть Telegram",
+      "TriggersRaw": "открой телеграм, запусти телеграм, открой тг, запусти тг, телега",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Открываю Телеграм" },
+        { "Type": 0, "Target": "Telegram.exe", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Открыть Избранное",
+      "TriggersRaw": "открой избранное, сохраненки в тг, открой сохраненное, избранное в телеграме",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Открываю Избранное" },
+        { "Type": 1, "Target": "tg://resolve?domain=me", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Написать сообщение: Занят",
+      "TriggersRaw": "напиши что занят, ответь что занят, я занят в тг, скажи что занят",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Отправляю сообщение" },
+        { "Type": 4, "Target": "Сейчас немного занят, напишу позже!" },
+        { "Type": 2, "Target": "Пауза перед отправкой", "ValueInt": 200 },
+        { "Type": 3, "Target": "enter" }
+      ]
+    },
+    {
+      "Name": "Написать сообщение: На месте",
+      "TriggersRaw": "напиши что я на месте, я пришел в тг, ответь что на месте, я тут",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Отправляю" },
+        { "Type": 4, "Target": "Я на месте 👍" },
+        { "Type": 2, "Target": "Пауза", "ValueInt": 200 },
+        { "Type": 3, "Target": "enter" }
+      ]
+    },
+    {
+      "Name": "Черновик сообщения любому контакту",
+      "TriggersRaw": "напиши сообщение в тг, создай черновик, новое сообщение в телеграме",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Выберите получателя" },
+        { "Type": 1, "Target": "tg://msg?text=Привет!" }
+      ]
+    },
+    {
+      "Name": "Поиск по чатам",
+      "TriggersRaw": "поиск в телеграме, найди в тг, поиск по чатам, найти диалог",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "esc" },
+        { "Type": 2, "Target": "Пауза", "ValueInt": 120 },
+        { "Type": 3, "Target": "ctrl+f" }
+      ]
+    },
+    {
+      "Name": "Заблокировать Telegram",
+      "TriggersRaw": "заблокируй телеграм, закрой тг на пароль, блок тг",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Блокирую Telegram" },
+        { "Type": 3, "Target": "ctrl+l" }
+      ]
+    },
+    {
+      "Name": "Следующий чат",
+      "TriggersRaw": "следующий чат, чат вниз, некст чат",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "alt+down" }
+      ]
+    },
+    {
+      "Name": "Предыдущий чат",
+      "TriggersRaw": "предыдущий чат, чат вверх, прошлый чат",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "alt+up" }
+      ]
+    },
+    {
+      "Name": "Свернуть Telegram",
+      "TriggersRaw": "скрой телеграм, сверни телеграм, сверни тг",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "esc" }
+      ]
+    },
+    {
+      "Name": "Закрыть Telegram полностью",
+      "TriggersRaw": "закрой телеграм полностью, выгрузи тг, заверши телеграм",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Выгружаю Telegram" },
+        { "Type": 0, "Target": "taskkill.exe", "Arguments": "/F /IM Telegram.exe" }
+      ]
+    }
+  ]
+}
