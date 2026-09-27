@@ -1,0 +1,122 @@
+{
+  "Id": "pack_chrome",
+  "Name": "Google Chrome Pack",
+  "Author": "MrLofrik",
+  "Version": "1.0",
+  "Description": "Управление вкладками, история, загрузки, инкогнито и хоткеи Chrome",
+  "Commands": [
+    {
+      "Name": "Открыть Chrome",
+      "TriggersRaw": "открой хром, запусти хром, открой браузер, браузер",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Открываю браузер" },
+        { "Type": 0, "Target": "chrome.exe", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Режим инкогнито",
+      "TriggersRaw": "инкогнито, открой инкогнито, секретная вкладка, приватная вкладка",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Открываю окно инкогнито" },
+        { "Type": 0, "Target": "chrome.exe", "Arguments": "-incognito", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Новая вкладка",
+      "TriggersRaw": "новая вкладка, открой вкладку, создай вкладку",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "ctrl+t", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Закрыть вкладку",
+      "TriggersRaw": "закрой вкладку, прикрой вкладку, закрой страницу",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "ctrl+w", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Восстановить вкладку",
+      "TriggersRaw": "верни вкладку, восстанови вкладку, открой закрытую вкладку",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Восстанавливаю" },
+        { "Type": 3, "Target": "ctrl+shift+t", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Следующая вкладка",
+      "TriggersRaw": "следующая вкладка, вперед по вкладкам",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "ctrl+tab", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Предыдущая вкладка",
+      "TriggersRaw": "предыдущая вкладка, назад по вкладкам",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "ctrl+shift+tab", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Обновить страницу",
+      "TriggersRaw": "обнови страницу, перезагрузи страницу, обнови",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "f5", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "История браузера",
+      "TriggersRaw": "история хрома, открой историю, покажи историю, история браузера",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Открываю историю" },
+        { "Type": 3, "Target": "ctrl+h", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Загрузки Chrome",
+      "TriggersRaw": "загрузки в хроме, открой загрузки, покажи скачанное, скачанные файлы",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "ctrl+j", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "Диспетчер закладок",
+      "TriggersRaw": "закладки в хроме, открой закладки, покажи закладки",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": true,
+      "Steps": [
+        { "Type": 6, "Target": "Открываю закладки" },
+        { "Type": 3, "Target": "ctrl+shift+o", "Arguments": "", "ValueInt": 0 }
+      ]
+    },
+    {
+      "Name": "На весь экран",
+      "TriggersRaw": "на весь экран, полноэкранный режим, полный экран",
+      "OptionalWords": "пожалуйста, быстро, давай, юри",
+      "ConfirmWithVoice": false,
+      "Steps": [
+        { "Type": 3, "Target": "f11", "Arguments": "", "ValueInt": 0 }
+      ]
+    }
+  ]
+}
