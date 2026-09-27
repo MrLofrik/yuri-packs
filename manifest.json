@@ -5,7 +5,7 @@
     "author": "MrLofrik",
     "version": "1.0",
     "description": "Управление вкладками, история, загрузки, инкогнито и хоткеи Chrome",
-    "download_url": "https://raw.githubusercontent.com/MrLofrik/yuri-packs/main/packs/chrome_pack.json"
+    "download_url": "https://raw.githubusercontent.com/MrLofrik/yuri-packs/refs/heads/main/packs/chrome_pack.json"
   },
   {
     "id": "pack_steam",
@@ -13,7 +13,7 @@
     "author": "MrLofrik",
     "version": "1.0",
     "description": "Библиотека игр, магазин, друзья, оверлей, инвентарь и управление клиентом Steam",
-    "download_url": "https://raw.githubusercontent.com/MrLofrik/yuri-packs/main/packs/steam_pack.json"
+    "download_url": "https://raw.githubusercontent.com/MrLofrik/yuri-packs/refs/heads/main/packs/steam_pack.json"
   },
   {
     "id": "pack_telegram",
@@ -21,7 +21,7 @@
     "author": "MrLofrik",
     "version": "1.1",
     "description": "Переход в Избранное, быстрые шаблоны ответов, поиск, блокировка и управление Telegram",
-    "download_url": "https://raw.githubusercontent.com/MrLofrik/yuri-packs/main/packs/telegram_pack.json"
+    "download_url": "https://raw.githubusercontent.com/MrLofrik/yuri-packs/refs/heads/main/packs/telegram_pack.json"
   },
   {
     "id": "pack_minecraft",
@@ -29,6 +29,6 @@
     "author": "MrLofrik",
     "version": "1.0",
     "description": "Координаты F3, границы чанков F3+G, хитбоксы F3+B, перезагрузка текстур F3+T и скриншоты",
-    "download_url": "https://raw.githubusercontent.com/MrLofrik/yuri-packs/main/packs/minecraft_pack.json"
+    "download_url": "https://raw.githubusercontent.com/MrLofrik/yuri-packs/refs/heads/main/packs/minecraft_pack.json"
   }
 ]
